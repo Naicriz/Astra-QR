@@ -14,7 +14,7 @@ function BannerProfile() {
                     quality={90}
                 />
             </div>
-            <div className="absolute w-32 h-32 mx-auto my-auto overflow-hidden border-2 border-yellow-100 rounded-full shadow-xl md:w-36 md:h-36 -bottom-12">
+            <div className="absolute w-32 h-32 mx-auto my-auto overflow-hidden border-2 rounded-full shadow-xl border-x-yellow-100 border-y-yellow-200 md:w-36 md:h-36 -bottom-12">
                 <Image
                     src="/openboxlogo.jpg"
                     alt="Profile tienda"
