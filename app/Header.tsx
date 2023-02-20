@@ -8,7 +8,7 @@ export default function Header() {
     return (
         <>
             <header>
-                <div className="flex items-center justify-between p-2 bg-white rounded-b-sm shadow-md">
+                <div className="flex items-center justify-between p-1 bg-white rounded-b-sm shadow-md">
                     <Link href="/" className="absolute items-center justify-center m-1 overflow-hidden bg-gray-200 rounded-full shadow-lg">
                         <Image
                             src="/astraqr.png"
@@ -23,8 +23,8 @@ export default function Header() {
                     <div>
 
                     </div>
-                    <button className="flex flex-row flex-initial px-6 py-1 m-1 border border-gray-500 rounded-lg bg-cyan-900 md:py-1.5 md:px-9 hover:bg-cyan-600 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">
-                        <div className="mr-4 font-medium text-white text-md">
+                    <button className="flex flex-row flex-initial px-6 py-1 my-1 mr-4 border border-gray-500 rounded-lg bg-cyan-900 md:py-1.5 md:px-9 hover:bg-cyan-600 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">
+                        <div className="font-medium text-white text-md">
                             Crea tu tienda
                         </div>
                         <Image
