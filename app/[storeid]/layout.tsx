@@ -1,5 +1,5 @@
 import '../globals.css'
-import Header from '../Header';
+import HeaderStore from "../Header";
 
 export default function RootLayout({
     children,
@@ -8,7 +8,7 @@ export default function RootLayout({
 }) {
     return (
         <section>
-            <Header />
+            <HeaderStore />
             {children}
         </section>
     )

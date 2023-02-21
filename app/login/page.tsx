@@ -1,6 +1,6 @@
 import React from "react";
 
-function LogIn() {
+export default function LogIn() {
     return (
         <>
             <h1 className="text-3xl font-bold text-center underline">
@@ -8,6 +8,4 @@ function LogIn() {
             </h1>
         </>
     );
-};
-
-export default LogIn;
+}

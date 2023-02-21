@@ -1,10 +1,10 @@
 import React from "react";
 import Image from 'next/image'
 
-function CardItem() {
+export default function CardItem() {
     return (
-        <div className="grid justify-center border border-blue-500">
-            <div className="grid max-w-lg grid-cols-3 bg-white border border-gray-100 rounded-lg shadow-lg max-h-sm sm:max-h-md">
+        <div className="flex-wrap flex justify-center">
+            <div className="grid max-w-lg grid-cols-3 bg-white border border-gray-100 rounded-lg shadow-lg max-h-16 sm:max-h-md">
                 <div className="relative order-last col-span-1 overflow-hidden">
                     <Image
                         src="/imagesushi.jpg"
@@ -33,6 +33,4 @@ function CardItem() {
             </div>
         </div>
     );
-};
-
-export default CardItem;
+}

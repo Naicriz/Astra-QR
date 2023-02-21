@@ -1,4 +1,4 @@
-function CardItemFeatured() {
+export default function CardItemFeatured() {
     return (
         <div className="grid justify-center border border-blue-500">
             <h2 className="border border-red-300">
@@ -6,6 +6,4 @@ function CardItemFeatured() {
             </h2>
         </div>
     );
-};
-
-export default CardItemFeatured;
+}
