@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 export default function CardItem() {
     return (
-        <div className="flex-wrap flex justify-center">
+        <div className="flex flex-wrap justify-center">
             <div className="grid max-w-lg grid-cols-3 bg-white border border-gray-100 rounded-lg shadow-lg max-h-16 sm:max-h-md">
                 <div className="relative order-last col-span-1 overflow-hidden">
                     <Image

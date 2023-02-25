@@ -9,12 +9,12 @@ export default function BannerProfile() {
                 <Image
                     src={bannerStore}
                     alt="Picture banner tienda"
-                    className="absolute object-cover w-full h-full rounded-lg shadow-lg"
+                    className="absolute object-cover w-full h-full rounded-lg"
                     quality={90}
                     priority
                 />
             </div>
-            <div className="absolute w-32 h-32 mx-auto my-auto overflow-hidden border-4 rounded-full shadow-xl border-inherit md:w-36 md:h-36 -bottom-12">
+            <div className="absolute w-32 h-32 mx-auto my-auto overflow-hidden border-4 rounded-full shadow-lg border-inherit md:w-36 md:h-36 -bottom-12">
                 <Image
                     src="/openboxlogo.jpg"
                     alt="Profile tienda"
