@@ -1,17 +1,20 @@
 import React from "react";
 import BannerProfile from "./bannerProfile";
-import CardCategory from "./cardItem";
+import SideBar from './sideBar';
+import CatalogContainer from './catalogContainer';
 
-function StoreMenu() {
+export default function StorePage() {
     return (
         <>
             <BannerProfile />
-            <div className="text-center">
-                PÁGINA CARTA QR - RESTAURANTE | TEXTO DE PRUEBA
+            <div className="grid items-center justify-center">
+
             </div>
-            <CardCategory />
+            {/* Contenedor de Sidebar e Itemcards con grid */}
+            <div className="relative grid items-center justify-center sm:mx-6 lg:mx-8 lg:grid-cols-11 lg:gap-4">
+                <SideBar />
+                <CatalogContainer />
+            </div>
         </>
     );
-};
-
-export default StoreMenu;
+}

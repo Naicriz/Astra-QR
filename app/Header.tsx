@@ -4,12 +4,12 @@ import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import Link from 'next/link'
 
-export default function Header() {
+export default function HeaderStore() {
     return (
         <>
             <header>
-                <div className="flex items-center justify-between p-2 bg-white rounded-b-sm shadow-md">
-                    <Link href="/" className="absolute items-center justify-center m-1 overflow-hidden bg-gray-200 rounded-full shadow-lg">
+                <div className="flex items-center justify-between bg-white rounded-b-sm shadow-md">
+                    <Link href="/" className="items-center justify-start m-1 overflow-hidden rounded-full">
                         <Image
                             src="/astraqr.png"
                             alt="Astra Logo"
@@ -17,25 +17,21 @@ export default function Header() {
                             priority
                             height={500}
                             width={500}
-                            quality={90}
+                            quality={80}
                         />
                     </Link>
-                    <div>
-
-                    </div>
-                    <button className="flex flex-row flex-initial px-6 py-1 m-1 border border-gray-500 rounded-lg bg-cyan-900 md:py-1.5 md:px-9 hover:bg-cyan-600 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">
-                        <div className="mr-4 font-medium text-white text-md">
-                            Crea tu tienda
-                        </div>
+                    <br />
+                    <Link href="/signin" className="flex flex-row px-6 py-1 my-1 mr-2 transition rounded-full md:mr-4 bg-slate-800 hover:bg-slate-600 focus:outline-none focus-visible:ring-1 focus-visible:ring-slate-500 focus-visible:ring-opacity-55">
+                        <div className="font-medium text-white text-start">Registrar mi tienda</div>
                         <Image
                             src="/tienda.svg"
-                            width={12}
-                            height={12}
-                            alt="Store Icon"
-                            className="items-center justify-center w-6 h-6 ml-4"
-                            quality={85}
+                            width={19}
+                            height={19}
+                            alt="Tienda Icon"
+                            className="items-center justify-end ml-2"
+                            quality={75}
                         />
-                    </button>
+                    </Link>
                 </div>
             </header>
         </>

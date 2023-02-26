@@ -1,35 +1,36 @@
 import React from "react";
 import Image from 'next/image'
 
-function CardItem() {
+export default function CardItem() {
     return (
-        <div className="flex justify-center">
-            <div className="flex flex-row-reverse max-w-xl bg-white border border-gray-100 rounded-lg shadow-lg max-h-28 md:max-h-34">
-                <div className="relative flex overflow-hidden max-w-28 md:max-w-34 max-h-28 md:max-h-34">
+        <div className="flex flex-wrap justify-center">
+            <div className="grid max-w-lg grid-cols-3 bg-white border border-gray-100 rounded-lg shadow-lg max-h-16 sm:max-h-md">
+                <div className="relative order-last col-span-1 overflow-hidden">
                     <Image
                         src="/imagesushi.jpg"
                         alt="Item tienda"
-                        className="object-cover w-full h-full rounded-lg rounded-l-none"
+                        className="object-cover object-center w-full h-full rounded-lg rounded-l-none"
                         width={500}
                         height={500}
                         priority
-                        quality={90}
+                        quality={70}
                     />
                 </div>
-                <div className="grid bg-white rounded-l-lg grid-col">
-                    <h3 className="mb-1 ml-2 font-sans text-lg font-medium text-gray-900 truncate text-ellipsis">
-                        California Ebi Roll
+                <div className="grid grid-flow-row col-span-2 bg-white rounded-l-lg">
+                    <h3 className="row-span-1 font-sans text-xl font-medium truncate border border-blue-500 text-slate-800">
+                        California Ebi Sake Roll
                     </h3>
-                    <p className="mx-2 mb-1 overflow-hidden font-sans text-gray-800 truncate text-ellipsis">
-                        Lorem ipsum dolor sit ame consectetur adipisicing elit. Quisquam, quod.
+                    <p className="font-sans text-lg font-normal border border-blue-500 text-slate-600">
+                        CLP 19.200
                     </p>
-                    <h3 className="flex flex-row mx-2 font-sans text-lg text-gray-900 border-t border-slate-100">
-                        $ 14.990
-                    </h3>
+                    <p className="overflow-hidden font-sans font-normal border border-blue-500 text-ellipsis text-slate-500">
+                        Lorem ipsum dolor sit ame consectetur adipisicing elit. Quisquam, quod. Lorem ipsum dolor sit ame consectetur adipisicing elit. Quisquam, quod. Lorem ipsum dolor sit ame consectetur adipisicing elit. Quisquam, quod.
+                    </p>
+                    <p className="overflow-hidden font-sans text-sm font-normal truncate border border-t border-blue-500 text-slate-400 border-slate">
+                        texto p2
+                    </p>
                 </div>
             </div>
         </div>
     );
-};
-
-export default CardItem;
+}
