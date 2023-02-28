@@ -8,7 +8,7 @@ export default function HeaderStore() {
     return (
         <>
             <header>
-                <div className="flex items-center justify-between bg-white rounded-b-sm shadow-md">
+                <div className="flex items-center justify-between bg-white shadow-md rounded-b-md">
                     <Link href="/" className="items-center justify-start m-1 overflow-hidden rounded-full">
                         <Image
                             src="/astraqr.png"
