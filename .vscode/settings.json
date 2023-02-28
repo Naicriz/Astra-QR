@@ -1,4 +1,9 @@
 {
   "typescript.tsdk": "node_modules/typescript/lib",
-  "typescript.enablePromptUseWorkspaceTsdk": true
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "synthwave84.brightness": 0.45,
+  "synthwave84.disableGlow": false,
+  "files.associations": {
+  "*.css": "tailwindcss"
+  },
 }

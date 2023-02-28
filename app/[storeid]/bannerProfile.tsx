@@ -1,32 +1,32 @@
 import React from "react";
 import Image from 'next/image'
+import bannerStore1 from "public/bannerstore1.png";
+import bannerStore3 from "public/bannerstore3.jpg";
 
-function BannerProfile() {
+export default function BannerProfile() {
     return (
-        <div className="relative flex flex-col items-center justify-center w-full p-4 m-4 mx-auto rounded-lg shadow-xl mb-14 border-1 h-36 md:h-48">
-            <div className="">
+        <div className="relative flex flex-col items-center justify-center w-full m-1 mx-auto border-4 rounded-lg shadow-lg mb-14 h-36 md:h-48 border-slate-200 group">
+            <div className="relative items-center justify-center w-full h-full">
                 <Image
-                    src="/banner1.png"
-                    alt="Banner tienda"
-                    className="object-cover w-full h-full rounded-lg"
-                    fill={true}
+                    src={bannerStore3}
+                    alt="Picture banner tienda"
+                    className="absolute object-cover w-full h-full rounded-lg"
+                    quality={90}
                     priority
-                    quality={100}
                 />
             </div>
-            <div className="absolute w-32 h-32 mx-auto my-auto overflow-hidden border-2 border-yellow-100 rounded-full shadow-xl md:w-36 md:h-36 -bottom-12">
+            <div className="absolute w-32 h-32 mx-auto my-auto overflow-hidden border-4 rounded-full shadow-md border-slate-200 md:w-36 md:h-36 -bottom-12">
                 <Image
                     src="/openboxlogo.jpg"
                     alt="Profile tienda"
-                    className="object-center w-full h-full"
-                    fill={true}
+                    className="object-contain object-center w-full h-full"
+                    height={1024}
+                    width={1024}
                     priority
-                    quality={100}
+                    quality={80}
                 />
             </div>
         </div>
 
     );
-};
-
-export default BannerProfile;
+}

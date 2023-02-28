@@ -1,5 +1,4 @@
 import './globals.css'
-import Header from './Header';
 
 export default function RootLayout({
   children,
@@ -13,8 +12,7 @@ export default function RootLayout({
         head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
       <head />
-      <body>
-        <Header />
+      <body className="container mx-auto bg-gray-100 max-sm:w-96">
         {children}
       </body>
     </html>
