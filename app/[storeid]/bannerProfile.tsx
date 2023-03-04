@@ -1,25 +1,25 @@
 import React from "react";
 import Image from 'next/image'
-import bannerStore1 from "public/bannerstore1.png";
-import bannerStore3 from "public/bannerstore3.jpg";
+import bannerStore from "public/bannerstore3.jpg";
+import logoStore from "public/openboxlogo.jpg";
 
 export default function BannerProfile() {
     return (
-        <div className="relative flex flex-col items-center justify-center w-full m-1 mx-auto border-4 rounded-lg shadow-lg mb-14 h-36 md:h-48 border-slate-200 group">
-            <div className="relative items-center justify-center w-full h-full">
+        <div className="relative flex flex-col items-center justify-center w-screen mx-auto mt-1 border-white shadow-md border-y-2 mb-14 h-36 sm:h-52 group">
+            <div className="absolute items-center justify-center w-full h-full">
                 <Image
-                    src={bannerStore3}
+                    src={bannerStore}
                     alt="Picture banner tienda"
-                    className="absolute object-cover w-full h-full rounded-lg"
+                    className="absolute object-cover w-full h-full"
                     quality={90}
                     priority
                 />
             </div>
-            <div className="absolute w-32 h-32 mx-auto my-auto overflow-hidden border-4 rounded-full shadow-md border-slate-200 md:w-36 md:h-36 -bottom-12">
+            <div className="relative z-50 w-32 h-32 overflow-hidden transition duration-300 scale-100 border-2 border-white rounded-full shadow-md sm:w-36 sm:h-36 -bottom-8 sm:-bottom-14">
                 <Image
-                    src="/openboxlogo.jpg"
-                    alt="Profile tienda"
-                    className="object-contain object-center w-full h-full"
+                    src={logoStore}
+                    alt="Picture profile tienda"
+                    className="relative object-contain object-center w-full h-full"
                     height={1024}
                     width={1024}
                     priority

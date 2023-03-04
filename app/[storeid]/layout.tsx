@@ -1,5 +1,5 @@
 import '../globals.css'
-import HeaderStore from "../Header";
+import HeaderStore from "./header";
 
 export default function RootLayout({
     children,
@@ -7,7 +7,7 @@ export default function RootLayout({
     children: React.ReactNode
 }) {
     return (
-        <section>
+        <section className="justify-center h-screen">
             <HeaderStore />
             {children}
         </section>

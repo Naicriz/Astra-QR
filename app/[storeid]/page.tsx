@@ -2,27 +2,23 @@
 
 import React from "react";
 import BannerProfile from "./bannerProfile";
-import SideBar from './sideBar';
-import CatalogContainer from './catalogContainer';
+import NavBarMenu from './navbarMenu';
+import CatalogItem from './catalogItem';
 import ItemCardFeatured from "./itemCardfFeatured";
-import NavBar from "./navBar";
+
 
 export default function StorePage() {
     return (
         <>
             <BannerProfile />
             {/* Contenedor de Sidebar e Itemcards con grid */}
-            <div>
-                <div className="container relative items-center justify-center">
-                    <div className="grid-cols-1 grid-rows-1 row-span-1 sm:mx-6 lg:mx-10 lg:grid-cols-11 lg:gap-4">
-                        <ItemCardFeatured />
-                    </div>
-                    <div className="grid-cols-1 grid-rows-1 row-span-1 sm:mx-6 lg:mx-10 lg:grid-cols-11 lg:gap-4">
-                        <NavBar />
-                    </div>
-                    <div className="grid items-center grid-cols-1 grid-rows-2 row-span-1 sm:mx-6 lg:mx-10 lg:grid-cols-11 lg:gap-4">
-                        <SideBar />
-                        <CatalogContainer />
+            <div className="grid items-center justify-center mx-auto">
+                <div className="grid items-center grid-cols-1 row-start-1 gap-1 lg:gap-8 lg:items-start lg:grid-cols-11">
+                    <NavBarMenu />
+                    <div className="grid col-span-11 gap-2 bg-transparent lg:row-start-1 bg-black-400 lg:col-span-8">
+                        <CatalogItem />
+                        <CatalogItem />
+                        <CatalogItem />
                     </div>
                 </div>
             </div>

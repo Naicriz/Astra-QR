@@ -1,7 +1,7 @@
 
 export default function ItemCardFeatured() {
     return (
-        <div className="h-40 max-w-sm bg-slate-500">
+        <div className="h-40 max-w-sm overflow-hidden bg-slate-500">
             <ul>
                 <li>I'll be a featured card juasjuasjuas</li>
                 <li>// ItemCardFeatured</li>

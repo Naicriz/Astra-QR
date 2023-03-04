@@ -1,33 +1,33 @@
 import Image from 'next/image'
-
+import ItemImage from '/public/imagesushi.jpg';
 export default function ItemCard() {
     return (
-        <div className="relative h-32 row-span-1 bg-white border rounded-md shadow-sm w-38 border-slate-100">
-            <div className="relative grid grid-flow-row grid-cols-6">
-                <div className="relative items-center justify-center order-last w-auto col-span-2 overflow-hidden">
+        <div className="relative max-w-md row-span-1 overflow-auto transition duration-300 scale-100 bg-white rounded-md shadow-md max-h-32 hover:scale-105 ">
+            <div className="grid grid-flow-row grid-cols-6">
+                <div className="relative items-center justify-center order-last col-span-2 overflow-hidden ">
                     <Image
-                        src="/imagesushi.jpg"
+                        src={ItemImage}
                         alt="Item tienda"
-                        className="object-cover object-center w-full h-32 rounded-md rounded-l-none"
+                        className="object-cover object-center h-full rounded-md rounded-l-none w-fit"
                         width={500}
                         height={500}
                         priority
                         quality={80}
                     />
                 </div>
-                <div className="relative h-32 grid-flow-row col-span-4 grid-rows-3 p-1 overflow-hidden">
-                    <p className="relative row-span-1 font-sans text-lg font-medium capitalize truncate text-slate-600">
+                <div className="relative grid-flow-row col-span-4 grid-rows-3 p-1 pl-2 overflow-hidden max-h-32 ">
+                    <p className="block row-span-1 capitalize truncate cardTitle">
                         California ebi sake roll
                     </p>
-                    <div className="relative flex items-baseline justify-start flex-auto row-span-1 gap-1">
-                        <p className="font-sans font-normal text-green-600 text-md">
+                    <div className="flex items-baseline justify-start flex-auto row-span-1 -mt-1 gap-x-1">
+                        <p className="block font-normal text-green-600 font-roboto text-md">
                             CLP 19.200
                         </p>
-                        <p className="relative font-sans text-sm font-thin line-through text-slate-500">
+                        <p className="block text-sm font-thin font-roboto text-slate-600">
                             CLP 22.100
                         </p>
                     </div>
-                    <p className="relative row-span-1 font-sans font-normal text-ellipsis text-slate-500">
+                    <p className="block row-span-1 pb-1 font-normal font-roboto overflow-ellipsis text-slate-500">
                         Lorem ipsum dolor sit ame consectetur adipisicing elit. Quisquam, quod. Lorem ipsum dolor sit ame consectetur adipisicing elit. Quisquam, quod. Lorem ipsum dolor sit ame consectetur adipisicing elit. Quisquam, quod.
                     </p>
                 </div>
